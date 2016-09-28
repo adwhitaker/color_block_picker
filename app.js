@@ -17,10 +17,25 @@ $(document).ready(function () {
 // this checks if the box that is clicked on is equal to the random number and prints answer to DOM
   var sucess = '';
   $('.box').on('click', function () {
+    var $clickedBox = $(this);
+    var color = colorArray[randomNum - 1];
+    console.log(color);
     if ( $(this).is('#' + colorArray[randomNum - 1]) ) {
-      sucess = 'Congrats!!!'
-      $('#answer').text(sucess);
-      randomNum = randomNumber(1, howManyColors);
+      console.log('#' + colorArray[randomNum - 1]);
+      $(this).css('background-color', 'pink');
+
+      delayedSucess()
+
+      function delayedSucess() {
+        window.setTimeout(sucessChange, 2000);
+      }
+      function sucessChange() {
+        $clickedBox.css('background-color', colorArray[randomNum - 1]);
+        sucess = 'Congrats!!!';
+        $('#answer').text(sucess);
+        randomNum = randomNumber(1, howManyColors);
+        console.log(randomNum);
+      }
     } else {
       sucess = 'Fail.'
       $('#answer').text(sucess);
