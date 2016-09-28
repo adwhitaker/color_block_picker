@@ -1,0 +1,27 @@
+.box {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+#red {
+  background-color: red;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: green;
+}
+#blue {
+  background-color: blue;
+}
+#purple {
+  background-color: purple;
+}
+#orange {
+  background-color: orange;
+}
+
+p {
+  clear:both;
+}
