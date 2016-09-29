@@ -1,7 +1,18 @@
 body {
   margin: 0 auto;
   text-align: center;
-  background-color: floralwhite;
+  background-color: #9bb0c0;
+}
+h1 {
+  color: #005500;
+}
+h2 {
+  color: #b50000;
+}
+p {
+  clear: both;
+  color: #3b0073;
+  font-size: 1.5em;
 }
 div {
   display: inline-block;;
@@ -36,7 +47,13 @@ div {
 .pink {
   background-color: pink;
 }
-
-p {
-  clear:both;
+button {
+  background-color: #634806;
+  color: #00bfff;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  box-shadow: 10px 10px 5px #888888;
 }

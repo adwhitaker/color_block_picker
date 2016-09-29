@@ -37,7 +37,9 @@ $(document).ready(function () {
 
   function randomColor() {
     randomNum = randomNumber(1, howManyColors);
-    $('#color').text(arrayOfColors[randomNum - 1]);
+    var color = arrayOfColors[randomNum - 1];
+    $('#color').text(color);
+    $('#color').css('color', color);
     getRandomColor = arrayOfColors[randomNum - 1]
     console.log('arrayOfColors', getRandomColor);
   }
@@ -61,7 +63,7 @@ $(document).ready(function () {
     if ( $clickedBox.is('#' + getRandomColor) ) {
       $(this).css('background-color', 'pink');
       $(this).css('border','limegreen solid 2px');
-      success = 'Congrats!!! Play Again!';
+      success = 'Congrats!!! Click New Game';
       $('#answer').text(success);
 // 2 second delay once the square is clicked
       delayedSuccess()
@@ -77,6 +79,7 @@ $(document).ready(function () {
     } else {
       success = 'Failure. Try Again.'
       $('#answer').text(success);
+      $(this).fadeOut('slow');
     }
   })
 
