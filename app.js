@@ -16,9 +16,12 @@ $(document).ready(function () {
 
 // funtion to create a random array of colors based on the colorArray
   function randomArray () {
+    // this creates a second array that is equal to colorArray
+    // I use this to splice colors from it to create the random array for which will be appended to the DOM
     for (var i = 0; i < colorArray.length; i++) {
       colorArray2[i] = colorArray[i];
     }
+    // arraryOfColors is used to create the random array
     arrayOfColors = [];
     howManyColors = 5;
     var addColor = randomNumber(1, howManyColors) - 1;
