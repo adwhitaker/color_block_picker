@@ -2,9 +2,11 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: #9bb0c0;
+  font-family: 'Indie Flower', cursive;
 }
 h1 {
   color: #005500;
+  font-weight: bold;
 }
 h2 {
   color: #b50000;
@@ -22,6 +24,8 @@ div {
   height: 100px;
   width: 100px;
   margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 2px #888888;
 }
 #red {
   background-color: red;
@@ -50,10 +54,11 @@ div {
 button {
   background-color: #634806;
   color: #00bfff;
-  width: 100px;
+  width: 200px;
   height: 50px;
   border: none;
   border-radius: 20px;
-  font-size: 1em;
+  font-size: 1.5em;
   box-shadow: 10px 10px 5px #888888;
+  font-family: 'Indie Flower', cursive;
 }
