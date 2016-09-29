@@ -11,7 +11,7 @@ $(document).ready(function () {
   var success = '';
   var randomNum = 0;
   var getRandomColor = '';
-  colorArray2 = [];
+  var colorArray2 = [];
 // var
 
 // funtion to create a random array of colors based on the colorArray
