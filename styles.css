@@ -1,7 +1,16 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: floralwhite;
+}
+div {
+  display: inline-block;;
+}
 .box {
   float: left;
   height: 100px;
   width: 100px;
+  margin: 20px;
 }
 #red {
   background-color: red;
@@ -20,6 +29,9 @@
 }
 #orange {
   background-color: orange;
+}
+#maroon {
+  background-color: maroon;
 }
 .pink {
   background-color: pink;
