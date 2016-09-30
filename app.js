@@ -68,6 +68,7 @@ $(document).ready(function () {
       $(this).css('border','limegreen solid 2px');
       success = 'Congrats!!! Click New Game';
       $('#answer').text(success);
+
 // 2 second delay once the square is clicked
       delayedSuccess()
 
