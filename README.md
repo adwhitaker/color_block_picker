@@ -1,4 +1,5 @@
 # Color Block Picker
+Color Block Picker Game that tells the player to pick a specific block color.
 
 ## Features
 - colors are randomly generated
